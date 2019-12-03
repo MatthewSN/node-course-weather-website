@@ -42,7 +42,7 @@ app.get("/help", (req, res) => {
 
 app.get("/weather", (req, res) => {
   const { address } = req.query;
-  console.log(typeof address);
+
   if (!address) {
     return res.send({
       error: "Address must be provided"
